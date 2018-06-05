@@ -1,54 +1,64 @@
+/* CSS Variables */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+
 body {
-    background:#011627;
-    color:white;
+    background: #ccc;
+    margin:30px 50px;
+    line-height: 1.4;
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr); 
-}
-
-#heroArea {
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    /* background:lightgrey; */
-    grid-column: 1 / -1;
-    height: 100vh;
-    grid-template-rows: repeat(6, 1fr);
-}
-
 
 #logo {
-    height:auto;
-    width: 40%;
-    grid-column: 1 / -1;
-    justify-self: center;
+    width: 35%;
+    min-width: 35%;
 }
-#welcomeMessage {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD CSS */
+
+/* body {
+    background:#011627;
+    color:white;
     font-family: 'Lato', sans-serif;
-    grid-column: 1 / 7;
-    justify-self: center;
-    padding-top: 140px;
-    grid-row: 1 / 4;
 }
 
 
-
-#buttonArea {
+.wrapper {
     display: grid;
-    grid-column: 1 / 7;
-    grid-template-columns: 3fr;
-    font-weight:lighter;
-    justify-self: center;
-    row-gap: 25px;
 }
 
-#catalogButton {
+#logo {
+    width: 35%;
+    min-width: 35%;
 }
 
-#registerButton {
 
-}
-button {
+btn {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: 3px solid white;
@@ -62,11 +72,4 @@ button {
     padding: 10px 20px 10px 20px;
     width: auto;
     min-height: 30px
-}
-
-#otherArea {
-    height: 100vh;
-    background:lightgrey;
-    grid-column: span 12;
-
-}
+} */
