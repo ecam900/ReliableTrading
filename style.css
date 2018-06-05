@@ -1,0 +1,61 @@
+body {
+    background:#011627;
+    color:white;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); 
+}
+
+#heroArea {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    background:lightgrey;
+    grid-column: 1 / 13;
+    height: 400px;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+#logo {
+    height:auto;
+    width: 25%;
+    grid-column: 1 / 13;
+    justify-self: center;
+}
+#welcomeMessage {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    grid-column: 1 / 7;
+    justify-self: center;
+    padding-top: 140px;
+    grid-row: 1 / 4;
+}
+
+
+
+#buttonArea {
+    display: grid;
+    grid-column: 1 / 7;
+    grid-template-columns: 3fr;
+    justify-self: center;
+}
+
+#catalogButton {
+}
+
+#registerButton {
+
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 3px solid white;
+    border-color: white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+    font-size: 1.5em;
+    padding: 2px;
+}
