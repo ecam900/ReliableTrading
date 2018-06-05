@@ -10,22 +10,21 @@ body {
 #heroArea {
     display:grid;
     grid-template-columns: repeat(6, 1fr);
-    background:lightgrey;
-    grid-column: 1 / 13;
-    height: 400px;
+    /* background:lightgrey; */
+    grid-column: 1 / -1;
+    height: 100vh;
     grid-template-rows: repeat(6, 1fr);
 }
 
 
 #logo {
     height:auto;
-    width: 25%;
-    grid-column: 1 / 13;
+    width: 40%;
+    grid-column: 1 / -1;
     justify-self: center;
 }
 #welcomeMessage {
     font-family: 'Lato', sans-serif;
-    font-weight: lighter;
     grid-column: 1 / 7;
     justify-self: center;
     padding-top: 140px;
@@ -38,7 +37,9 @@ body {
     display: grid;
     grid-column: 1 / 7;
     grid-template-columns: 3fr;
+    font-weight:lighter;
     justify-self: center;
+    row-gap: 25px;
 }
 
 #catalogButton {
@@ -56,6 +57,16 @@ button {
     overflow: hidden;
     outline:none;
     color:white;
-    font-size: 1.5em;
-    padding: 2px;
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    min-height: 30px
+}
+
+#otherArea {
+    height: 100vh;
+    background:lightgrey;
+    grid-column: span 12;
+
 }
