@@ -156,11 +156,65 @@ img {
     display: grid;
     grid-gap: 1.55rem;
     grid-template-columns: repeat(2,1fr);
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .infoImage img {
     max-width:85%;
+}
+
+.hoursAndLocation {
+    display:grid;
+    grid-template-areas:
+    'locationText'
+    'hours'
+    'locationGrid';
+    grid-auto-rows: auto;
+}
+.hoursAndLocation * {
+    margin: 0;
+}
+
+.btnLocation {
+    background: #011627;
+    color: var(--light);
+    padding: 0.3rem .3rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-width: 2px;
+    font-size:1.3rem;
+    height: auto;
+    padding-top:.5rem;
+}
+
+.locationText {
+    grid-area: locationText;
+}
+.hours {
+    grid-area: hours;
+    
+}
+.locationGrid {
+    grid-area: locationGrid;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap:.6rem;
+}
+
+.locationGridText {
+    grid-column: 1 / -1;
+    margin-top:.5rem;
+    margin-bottom: .5rem;
+}
+
+#warehousePin {
+
+}
+
+#showroomPin {
+
 }
 
 /* Portfolio */
