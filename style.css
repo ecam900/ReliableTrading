@@ -115,6 +115,10 @@ img {
     border-width: 1.3px;
     border-color: var(--light);
     font-size:1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #buttonA {
@@ -125,6 +129,7 @@ img {
 #buttonB {
     grid-column: 4;
     grid-row: 3;
+    align-self: stretch;
 }
 
 .showcaseButton {
@@ -157,8 +162,9 @@ img {
     box-shadow: var(--shadow);
     display: grid;
     grid-gap: 1.55rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 35% 65%;
     padding: 2rem;
+    padding-top: 1rem;
 }
 
 .infoImage img {
