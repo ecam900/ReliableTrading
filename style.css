@@ -3,6 +3,7 @@
     --primary: #ddd;
     --dark: #333;
     --light: #fff;
+    --accent: #fdca40;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -27,6 +28,7 @@ img {
 .wrapperTop {
     display:grid;
     grid-gap: 1.3rem;
+    margin:0;
 }
 
 .wrapperBottom{
@@ -100,7 +102,8 @@ img {
     grid-row: 2;
     font-size: 1.3rem;
     margin-top: 0;
-    color: var(--light);
+    /* color: var(--light); */
+    color: var(--accent);
 }
 
 .btn {
@@ -110,7 +113,12 @@ img {
     text-decoration: none;
     border: solid;
     border-width: 1.3px;
+    border-color: var(--light);
     font-size:1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #buttonA {
@@ -121,10 +129,11 @@ img {
 #buttonB {
     grid-column: 4;
     grid-row: 3;
+    align-self: stretch;
 }
 
 .showcaseButton {
-    background-color: rgba(104, 104, 104, 0.4);
+    background-color: rgba(133, 130, 121, 0.3);
 }
 
 
@@ -153,8 +162,9 @@ img {
     box-shadow: var(--shadow);
     display: grid;
     grid-gap: 1.55rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 35% 65%;
     padding: 2rem;
+    padding-top: 1rem;
 }
 
 .infoImage img {
@@ -163,15 +173,21 @@ img {
 
 .hoursAndLocation {
     display:grid;
-    grid-template-areas:
-    'locationText'
-    'hours'
-    'locationGrid';
     grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
 }
-.hoursAndLocation * {
-    margin: 0;
+
+.hoursAndLocation h4 {
+    margin: 4px;
 }
+
+.hoursAndLocation p {
+    margin: 0px;
+}
+
 
 .btnLocation {
     background: #011627;
@@ -180,40 +196,18 @@ img {
     text-decoration: none;
     border: none;
     border-width: 2px;
-    font-size:1.3rem;
+    font-size:1.1rem;
     height: auto;
     padding-top:.7rem;
     width: auto;
+    padding:.75rem;
+    margin-top: 50px;
 }
 
-.locationText {
-    grid-area: locationText;
-}
-.hours {
-    grid-area: hours;
-    
-}
-.locationGrid {
-    grid-area: locationGrid;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-gap:.6rem;
-}
 
-.locationGridText {
-    grid-column: 1 / -1;
-    margin-top:.5rem;
-    margin-bottom: .5rem;
-}
 
-#warehousePin {
-    grid-column: 1;
-}
 
-#showroomPin {
-    grid-column: 2;
-}
+
 
 /* Portfolio */
 .portfolio {
@@ -222,48 +216,17 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 
+/* .footerWrapper {
+    margin-bottom:100px;
+} */
 /* Footer */
 footer {
     /* margin-top: 1rem; */
     background: var(--dark);
     color: var(--light);
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     font-size:.75rem;
 }
 
-
-/* OLD CSS */
-
-/* body {
-    background:#011627;
-    color:white;
-    font-family: 'Lato', sans-serif;
-}
-
-
-.wrapper {
-    display: grid;
-}
-
-#logo {
-    width: 35%;
-    min-width: 35%;
-}
-
-
-btn {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: 3px solid white;
-    border-color: white;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    color:white;
-    font-size: 1.3em;
-    font-weight: lighter;
-    padding: 10px 20px 10px 20px;
-    width: auto;
-    min-height: 30px
-} */
