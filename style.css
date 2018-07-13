@@ -139,7 +139,7 @@ img {
 
 #logo {
     width: 35%;
-    min-width: 35%;
+    min-width: 300px;
     grid-area: logo;
 }
 
@@ -167,10 +167,6 @@ img {
     padding-top: 1rem;
 }
 
-.infoImage img {
-    /* max-width:85%; */
-}
-
 .hoursAndLocation {
     display:grid;
     grid-auto-rows: auto;
@@ -188,6 +184,10 @@ img {
     margin: 0px;
 }
 
+.hourAndLocationSub {
+    width: 95%;
+    padding-left: 5%;
+}
 
 .btnLocation {
     background: #011627;
