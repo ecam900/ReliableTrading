@@ -1,0 +1,12 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+ }
+
+/* Medium devices (desktops) */
+@media (max-width: 917px) {
+    body{
+        background-color: red;
+    }
+
+}
