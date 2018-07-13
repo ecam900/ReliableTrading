@@ -167,13 +167,15 @@ img {
     padding-top: 1rem;
 }
 
+
+
 .hoursAndLocation {
     display:grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(1fr, minmax(100px, 1fr));
+    grid-template-rows: repeat(1fr, minmax(100px, 1fr));
+    grid-template-areas:
+    "hoursAndLocationSubWH hoursANdLocationSubSR"
+    "WHpin SRpin";
 }
 
 .hoursAndLocation h4 {
@@ -184,8 +186,25 @@ img {
     margin: 0px;
 }
 
-.hourAndLocationSub {
+.hourAndLocationSubWH {
+    grid-area: hoursAndLocationSubWH;
     width: 95%;
+    padding-left: 5%;
+}
+
+.hourAndLocationSubSR {
+    grid-area: hoursANdLocationSubSR;
+    width: 95%;
+    padding-left: 5%;
+}
+
+.WHpin {
+    grid-area: WHpin;
+    padding-left: 5%;
+}
+
+.SRpin {
+    grid-area: SRpin;
     padding-left: 5%;
 }
 
@@ -244,3 +263,10 @@ footer {
     font-size:.75rem;
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 935px) {
+    body {
+        background-color: red;
+    }
+}
