@@ -266,21 +266,22 @@ footer {
     padding-bottom: 1rem;
     font-size:.75rem;
     text-decoration:none;
+    line-height: 5px;
 }
 
-#attribution  {
+.attribution  {
     color:rgb(95, 93, 93);
 }
 
-#attribution a {
+.attribution a {
     color:rgb(95, 93, 93);
     text-decoration:none;
 }
 
 /* Media Queries */
 
-@media only screen and (max-width: 935px) {
+/* @media only screen and (max-width: 935px) {
     body {
         background-color: red;
     }
-}
+} */
