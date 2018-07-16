@@ -261,6 +261,16 @@ footer {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     font-size:.75rem;
+    text-decoration:none;
+}
+
+#attribution  {
+    color:rgb(95, 93, 93);
+}
+
+#attribution a {
+    color:rgb(95, 93, 93);
+    text-decoration:none;
 }
 
 /* Media Queries */
