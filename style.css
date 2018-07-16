@@ -171,6 +171,14 @@ img {
     padding-top: 1rem;
 }
 
+.infoImage {
+    display:grid;
+    justify-items: center;
+}
+
+.infoImage img {
+    width: 50%;
+}
 
 
 .hoursAndLocation {
@@ -193,23 +201,23 @@ img {
 .hourAndLocationSubWH {
     grid-area: hoursAndLocationSubWH;
     width: 95%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 .hourAndLocationSubSR {
     grid-area: hoursANdLocationSubSR;
     width: 95%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 .WHpin {
     grid-area: WHpin;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 .SRpin {
     grid-area: SRpin;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 .btnLocation {
