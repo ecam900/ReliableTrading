@@ -175,8 +175,13 @@ img {
     align-content: center;
 }
 
+.infoImage p {
+    margin: 3% 0% 0% 0%;
+}
+
 .infoImage img {
     width: 50%;
+    margin-bottom: 3%;
 }
 
 
@@ -255,12 +260,17 @@ img {
 }
 
 .brandsImages {
-    display: grid;
+    display: flex;
     grid-area: 'brandsImages';
-    grid-template-columns: repeat(auto-fit, minmax(200px,.33fr));
+    flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 1.5rem;
     align-items: center;
+}
+
+.brandsImages img {
+    flex: 0 0 calc(16.66% - 20px);
+    width: 15em;
+    padding: 20px;
 }
 
 /* Footer */
@@ -285,10 +295,3 @@ footer {
     text-decoration:none;
 }
 
-/* Media Queries */
-
-/* @media only screen and (max-width: 935px) {
-    body {
-        background-color: red;
-    }
-} */
