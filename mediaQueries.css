@@ -2,13 +2,13 @@
 
 /* Medium devices (desktops) */
 @media (max-width: 917px) {
-    body{
+    /* body{
         background-color: red;
-    }
+    } */
 
     .showcase   {
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
     }
 
     #buttonA {
@@ -22,14 +22,16 @@
         align-self: stretch;
     }
 
+    .showcase h1 {
+        font-size: 3rem;
+    }
 }
 
 
 @media (max-width: 680px) {
-
-    body {
+    /* body{
         background-color: blue;
-    }
+    } */
 
     .boxes {
         grid-gap: .5rem;
@@ -38,7 +40,6 @@
 
     .showcase   {
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
     }
 
     #buttonA {
@@ -51,6 +52,50 @@
         grid-column: 1;
         grid-row: 4;
         margin: 0% 15% 0% 15%;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .hoursAndLocation {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap: .5em;
+        grid-auto-rows: minmax(50px, auto);
+        justify-items: center;
+        grid-template-areas:
+        "hoursAndLocationSubWH" 
+        "WHpin"
+        "hoursANdLocationSubSR"
+        "SRpin";
+    }
+    
+    
+    .hourAndLocationSubWH {
+        grid-area: hoursAndLocationSubWH;
+        width: 95%;
+        /* padding-left: 5%; */
+    }
+    
+    .hourAndLocationSubSR {
+        grid-area: hoursANdLocationSubSR;
+        width: 95%;
+        /* padding-left: 5%; */
+    }
+    
+    .WHpin {
+        grid-area: WHpin;
+        /* padding-left: 5%; */
+    }
+    
+    .SRpin {
+        grid-area: SRpin;
+        /* padding-left: 5%; */
+    }
+
+    footer {
+        font-size:.5rem;
     }
 
  }
