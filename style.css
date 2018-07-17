@@ -176,12 +176,16 @@ img {
 }
 
 .infoImage p {
-    margin: 3% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
 }
 
 .infoImage img {
     width: 50%;
     margin-bottom: 3%;
+}
+
+.infoImage h4 {
+    margin-bottom: 1%;
 }
 
 
