@@ -1,7 +1,4 @@
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) {
 
- }
 
 /* Medium devices (desktops) */
 @media (max-width: 917px) {
@@ -9,4 +6,51 @@
         background-color: red;
     }
 
+    .showcase   {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+    }
+
+    #buttonA {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    #buttonB {
+        grid-column: 2;
+        grid-row: 4;
+        align-self: stretch;
+    }
+
 }
+
+
+@media (max-width: 680px) {
+
+    body {
+        background-color: blue;
+    }
+
+    .boxes {
+        grid-gap: .5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .showcase   {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+    }
+
+    #buttonA {
+        grid-column: 1;
+        grid-row: 3;
+        margin: 0% 15% 0% 15%;
+    }
+    
+    #buttonB {
+        grid-column: 1;
+        grid-row: 4;
+        margin: 0% 15% 0% 15%;
+    }
+
+ }
