@@ -218,6 +218,11 @@ img {
     /* padding-left: 5%; */
 }
 
+.hoursAndLocation strong {
+    color: #1BA3DD;
+    font-size: 1.2em;
+}
+
 .WHpin {
     grid-area: WHpin;
     /* padding-left: 5%; */

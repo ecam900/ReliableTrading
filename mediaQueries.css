@@ -72,6 +72,7 @@
         grid-gap: .5em;
         grid-auto-rows: minmax(50px, auto);
         justify-items: center;
+        text-align: center;
         grid-template-areas:
         "hoursAndLocationSubWH" 
         "WHpin"
@@ -79,18 +80,6 @@
         "SRpin";
     }
     
-    
-    .hourAndLocationSubWH {
-        grid-area: hoursAndLocationSubWH;
-        width: 95%;
-        /* padding-left: 5%; */
-    }
-    
-    .hourAndLocationSubSR {
-        grid-area: hoursANdLocationSubSR;
-        width: 95%;
-        /* padding-left: 5%; */
-    }
     
     .WHpin {
         grid-area: WHpin;
