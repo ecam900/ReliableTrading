@@ -1,37 +1,19 @@
 *, *:before, *:after {
     box-sizing: border-box;
   }
-  /* body {
-    height: 100vh;
-    background: #ccc;
-    overflow: hidden;
-  } */
+
   .modal-container {
-    margin: 60px auto;
+    /* margin: 60px auto;
     padding-top: 0px;
     position: relative;
-    width: 160px;
+    width: 160px; */
+    /* display: none; */
   }
-  .modal-container .modal-btn {
-    display: block;
-    margin: 0 auto;
-    color: #fff;
-    width: 160px;
-    height: 50px;
-    line-height: 50px;
-    background: #446cb3;
-    font-size: 22px;
-    border: 0;
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 5px 5px -5px #333;
-    transition: background 0.3s ease-in;
+  .modal-btn {
+    transition: background 1.3s ease-in;
   }
-  .modal-container .modal-btn:hover {
-    background: #365690;
-  }
-  .modal-container .modal-content, .modal-container .modal-backdrop {
+
+  .modal-content, .modal-backdrop {
     height: 0;
     width: 0;
     opacity: 0;
@@ -40,7 +22,7 @@
     cursor: pointer;
     transition: opacity 0.2s ease-in;
   }
-  .modal-container .modal-close {
+ .modal-close {
     color: #aaa;
     position: absolute;
     right: 5px;
@@ -54,10 +36,10 @@
     text-align: center;
     cursor: pointer;
   }
-  .modal-container .modal-close:hover {
+ .modal-close:hover {
     color: #333;
   }
-  .modal-container .modal-content-btn {
+ .modal-content-btn {
     position: absolute;
     text-align: center;
     cursor: pointer;
@@ -72,14 +54,14 @@
     padding-top: 9px;
     font-weight: normal;
   }
-  .modal-container .modal-content-btn:hover {
+  .modal-content-btn:hover {
     color: #fff;
     background: #365690;
   }
-  .modal-container #modal-toggle {
+   #modal-toggle {
     display: none;
   }
-  .modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
+   #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100vw;
     height: 100vh;
@@ -91,7 +73,7 @@
     opacity: 1;
     transition: opacity 0.2s ease-in;
   }
-  .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+  #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
     opacity: 1;
     background-color: #fff;
     max-width: 400px;
@@ -114,3 +96,24 @@
     }
   }
   
+
+  /* CUSTOM CSS */
+
+  .modal-grid {
+      display: grid;
+      text-align: center;
+      margin: .5rem .5rem;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding-top: 2rem;
+  }
+
+  .modal-icon {
+      grid-template-columns: 2fr;
+      font-weight: bold;
+  }
+
+  .modal-svg {
+      width: 5rem;
+  }

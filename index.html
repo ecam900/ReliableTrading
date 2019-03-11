@@ -31,10 +31,12 @@
             <div class="showcase">
                 <h1 class="animated fadeIn">Welcome to Reliable</h1>
                 <p class="animated fadeInUp">Producers of Reliable Air Systems and Power Machines, proudly supplying the Caribbean since 2002.</p>
-                <a href="https://www.cognitoforms.com/ReliableTradingInc/reliablepowermachinesgeneratorwarrantyform" class="btn showcaseButton animate fadeInUp" id="buttonA">Register Warranty</a>
+                <label for="modal-toggle" class="modal-btn btn showcaseButton animate fadeInUp" for="modal-toggle" id="buttonA">Register Warranty</label>
                 <a href="https://www.dropbox.com/sh/g5azezzyhca0tvi/AADSS9IGnUheBofet8OA_wJra?dl=0" class="btn showcaseButton animate fadeInUp" id="buttonB">Online Catalog</a>
             </div>
         </section>
+
+
     </div>
     <div class="wrapperBottom">
         <!-- Boxes Section -->
@@ -118,6 +120,8 @@
         </section>
     </div>
 </div>
+
+
 <!-- End Bottom Wrapper Div -->
 
 <!-- Footer -->
@@ -128,20 +132,24 @@
             <p class="attribution">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart from <a href="https://www.flaticon.com/" title="Flaticon">FlatIcon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
     </footer>
 </div>
-
-<!-- Modal -->
-<div class="modal-container">
-    <input id="modal-toggle" type="checkbox">
-    <label class="modal-btn" for="modal-toggle">Click me</label> 
-    <label class="modal-backdrop" for="modal-toggle"></label>
-    <div class="modal-content">
-      <label class="modal-close" for="modal-toggle">&#x2715;</label>
-      <h2>Modal title</h2><hr />
-      <p>Hello from inside the modal!</p> 
-      <label class="modal-content-btn" for="modal-toggle">OK</label>   
-    </div>          
-  </div>
-  <!-- /Modal -->
-
+    <!-- Modal -->
+    <div class="modal-container">
+            <input id="modal-toggle" type="checkbox">
+            <label class="modal-backdrop" for="modal-toggle"></label>
+            <div class="modal-content">
+                <label class="modal-close" for="modal-toggle">&#x2715;</label>
+            <h2>What are you registering?</h2><hr />
+            <div class="modal-grid">
+                <div class="modal-icon">
+                    <a href="https://www.cognitoforms.com/ReliableTradingInc/reliablepowermachinesgeneratorwarrantyform"><img src="img/icons/fan.svg" class="modal-svg" alt=""></a>
+                    <div>Air Systems</div>
+                </div>
+                <div class="modal-icon">
+                    <a href="https://www.cognitoforms.com/ReliableTradingInc/reliablepowermachinesgeneratorwarrantyform"><img src="img/icons/generator.svg" class="modal-svg" alt=""></a>
+                    <div>Electric Generators</div>
+                </div>
+            </div>
+        </div>          
+    <!-- /Modal -->
 </body>
 </html>
